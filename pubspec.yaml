@@ -1,0 +1,35 @@
+name: steklo
+description: "Personal mobile knowledge base based on markdown documents"
+
+publish_to: 'GitHub' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.1.5
+  flutter_fancy_tree_view: ^1.4.0
+  uuid: ^3.0.7
+  provider: ^6.0.5
+  markdown_editor_plus: ^0.2.5
+  graphview: ^1.2.0
+  file_selector: ^1.0.3
+  #file_picker: ^1.2.0
+  shared_preferences: ^2.2.2
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
