@@ -353,7 +353,7 @@ class NotesDrawer extends StatelessWidget {
                         try {
                           await f.delete();
 
-                          // If the currently opened note is deleted — clear the editor
+                          // If the currently opened note is deleted - clear the editor
                           if (vm.current?.path == f.path) {
                             vm.current = null;
                             vm.content = '';
@@ -520,7 +520,7 @@ class _GraphPageState extends State<GraphPage> {
       }
     }
 
-    // Isolated nodes — invisible self-edge
+    // Isolated nodes (invisible self-edge)
     for (final node in isolatedNodes) {
       graph.addEdge(
         node,
@@ -632,4 +632,5 @@ class _GraphPageState extends State<GraphPage> {
       ),
     );
   }
+
 }
