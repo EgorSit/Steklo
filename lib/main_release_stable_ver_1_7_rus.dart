@@ -352,7 +352,7 @@ class NotesDrawer extends StatelessWidget {
                         try {
                           await f.delete();
 
-                          // Если удалена текущая открытая заметка — очистить редактор
+                          // Если удалена текущая открытая заметка - очистить редактор
                           if (vm.current?.path == f.path) {
                             vm.current = null;
                             vm.content = '';
@@ -462,8 +462,8 @@ class _SearchPageState extends State<SearchPage> {
 
 // GRAPH PAGE
 // Визуализация связей между заметками:
-// - узлы — заметки;
-// - рёбра — ссылки вида [[имя_заметки]].
+// - узлы - это заметки;
+// - рёбра - это ссылки вида [[имя_заметки]].
 // Поддерживает масштабирование и навигацию.
 class GraphPage extends StatefulWidget {
   final void Function(File file)? onNodeTap;
@@ -519,7 +519,7 @@ class _GraphPageState extends State<GraphPage> {
       }
     }
 
-    // Изолированные узлы — невидимое ребро к себе
+    // Изолированные узлы (невидимое ребро к себе)
     for (final node in isolatedNodes) {
       graph.addEdge(
         node,
@@ -630,4 +630,5 @@ class _GraphPageState extends State<GraphPage> {
       ),
     );
   }
+
 }
